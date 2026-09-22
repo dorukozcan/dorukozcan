@@ -13,10 +13,11 @@ I build the unglamorous middle of data products: the API that serves the model, 
 | Project | What it is | Stack |
 |---|---|---|
 | **[Weather-Aware Travel Agent](https://github.com/dorukozcan/weather-aware-travel-agent)** | LangChain tool-calling agent on LLaMA 3.3 70B (Groq) that plans trips around the forecast; an LLM-as-judge critic grades every plan. [Live demo](https://huggingface.co/spaces/dorukozcan/travel-agent). | LangChain · Groq · Gradio · OpenWeatherMap |
-| **[Car Selection System](https://github.com/dorukozcan/car-selection-system)** | Decision-support platform that ranks 1,516 used cars with CRITIC-weighted TOPSIS and recognises a car's brand from a photo. Capstone project. | FastAPI · SQLAlchemy · React · YOLO/ONNX |
-| **[Istanbul Apartment Price Prediction](https://github.com/dorukozcan/istanbul-apartment-price-prediction)** | End-to-end data mining over 24,767 listings — EDA, feature engineering, three-model benchmark. LightGBM at cross-validated R² 0.85. | pandas · scikit-learn · LightGBM |
+| **[Car Selection System](https://github.com/dorukozcan/car-selection-system)** | Capstone. Ranks 1,819 used cars on 18 criteria with CRITIC-weighted TOPSIS, cross-checked by VIKOR and MOORA; a YOLOv8n classifier recognises the brand from a photo (89.5% top-1, 11 brands). Four services in Docker Compose. | FastAPI · PostgreSQL · React · YOLOv8/ONNX · Docker |
+| **[Istanbul Apartment Price Prediction](https://github.com/dorukozcan/istanbul-apartment-price-prediction)** | Data mining over 24,767 listings: EDA, feature engineering, three-model benchmark. LightGBM: R² 0.85 (5-fold CV, log price), 21% MAPE on holdout. | pandas · scikit-learn · LightGBM |
 | **[Highly Available WordPress on AWS](https://github.com/dorukozcan/aws-highly-available-wordpress)** | Multi-AZ infrastructure: custom VPC, private RDS, golden AMI, ALB, Auto Scaling Group. | AWS · Nginx · Linux |
-| **[Readers–Writers Lock](https://github.com/dorukozcan/readers-writers-semaphore)** | Classic synchronisation problem solved with two fair counting semaphores. | Java · concurrency |
+| **[P2P Encrypted Chat](https://github.com/dorukozcan/p2p-encrypted-chat)** | Serverless LAN chat: UDP peer discovery, direct TCP, Diffie–Hellman key exchange + AES-256. Co-authored course project. | Python · sockets · cryptography |
+| **[Readers–Writers Lock](https://github.com/dorukozcan/readers-writers-semaphore)** | Semaphore-based readers–writers lock, plus a starvation-free turnstile variant and a demo that measures the difference. | Java · concurrency |
 | **[Puzzle Game Hub](https://github.com/dorukozcan/android-puzzle-game-hub)** | Native Android hub bundling ten mini-games behind one launcher. | Java · Android SDK |
 
 ## Experience
@@ -34,9 +35,9 @@ Responsive web and mobile interfaces from Figma designs with React and React Nat
 
 **Languages** Python · SQL · Java · C++ · JavaScript  
 **Backend & data** FastAPI · REST · SQLAlchemy · Pydantic · PostgreSQL · MySQL · pandas · NumPy  
-**ML** scikit-learn · LightGBM · YOLO/ONNX · model evaluation and validation  
+**ML** scikit-learn · LightGBM · YOLOv8 classification (ONNX) · model evaluation and validation  
 **LLM & agents** LangChain · tool calling · LLM-as-judge evaluation · Groq · Gradio · Hugging Face Spaces  
-**Infrastructure** AWS (EC2, VPC, RDS, ALB, S3) · Docker · Kubernetes · Linux · Jenkins  
+**Infrastructure** AWS (EC2, VPC, RDS, ALB, S3) · Docker / Docker Compose · Kubernetes · Linux · Jenkins · GitHub Actions  
 **Ways of working** Git · Agile/Scrum · Jira · Confluence · Postman · pytest
 
 ## Reach me
